@@ -1,10 +1,10 @@
 package src;
 
 public class main {
-    public static void main(String[] args) throws Exception {
-        script script = new script();
-        codeTester codeTester = new codeTester(script.class.getMethod("scriptExample", int.class), script);
-        errorCalculator errorCalculator = new errorCalculator(codeTester);
+    public main(String[] args) throws Exception {
+        Script script = new Script();
+        CodeTester codeTester = new CodeTester(Script.class.getMethod("scriptExample", int.class), script);
+        ErrorCalculator errorCalculator = new ErrorCalculator(codeTester);
         Tarantula taran = new Tarantula(errorCalculator.calculateAllValues());
         System.out.println(taran.metricCalculator());
     }

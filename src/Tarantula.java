@@ -14,7 +14,7 @@ public class Tarantula {
     private final double cNoExecutionPass;
 
     /**
-     *  
+     *
      *
      * @param cExecutionFail    Number of failed test cases where the code was executed.
      * @param cNoExecutionFail  Number of failed test cases where the code was not executed.

@@ -2,11 +2,10 @@ package src;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
-public class errorCalculator {
-    codeTester codeTester;
-    public errorCalculator(  codeTester codeTester ) {
+public class ErrorCalculator {
+    CodeTester codeTester;
+    public ErrorCalculator(CodeTester codeTester ) {
         this.codeTester = codeTester;
     }
 

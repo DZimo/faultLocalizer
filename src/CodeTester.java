@@ -2,11 +2,11 @@ package src;
 
 import java.lang.reflect.Method;
 
-public class codeTester {
+public class CodeTester {
     Method methodToTest;
-    script instanceOfScript;
+    Script instanceOfScript;
 
-    public codeTester (Method method, script instanceOfScript){
+    public CodeTester(Method method, Script instanceOfScript){
         this.methodToTest=method;
         this.instanceOfScript = instanceOfScript;
     }

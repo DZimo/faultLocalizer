@@ -1,8 +1,8 @@
 package src;
 
-public class script {
+public class Script {
 
-    public void scriptExample(int numberToTest)
+    public int scriptExample(int numberToTest)
     {
         packet packet = new packet(numberToTest);
         int data;
@@ -19,9 +19,10 @@ public class script {
                 packet = null;
                 break;
         }
-        data = packet.value; // In case of default it will throw error as packet is null
+        data = packet.value;
+        return data;
     }
 
-    public script () {};
+    public Script() {};
 }
 
