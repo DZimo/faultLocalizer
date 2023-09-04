@@ -12,7 +12,7 @@ public class Tarantula {
     private final double cNoExecutionPass;
 
     /**
-     * Constructor to initialize the tarantula metric values.
+     *  
      *
      * @param cExecutionFail    Number of failed test cases where the code was executed.
      * @param cNoExecutionFail  Number of failed test cases where the code was not executed.
@@ -35,7 +35,7 @@ public class Tarantula {
     public double metricCalculator() throws Exception {
         // Ensure that we don't have a denominator of zero in our calculations
         if (cExecutionFail + cNoExecutionFail == 0 || cExecutionPass + cNoExecutionPass == 0) {
-            throw new Exception("You must fix your values!");
+            throw new Exception("we must fix your values!");
         }
 
         // Calculate the suspicious ness ratio for failed test cases
