@@ -2,9 +2,9 @@ package src;
 
 public class script {
 
-    public void scriptExample()
+    public void scriptExample(int numberToTest)
     {
-        packet packet = new packet(0);
+        packet packet = new packet(numberToTest);
         int data;
         switch (packet.value)
         {
