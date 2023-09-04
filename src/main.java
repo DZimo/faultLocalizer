@@ -7,7 +7,7 @@ public class main {
         //script.scriptExample(0); // here we try to do tests and collect results to get number of errors
         codeTester codeTester = new codeTester(script.class.getMethod("scriptExample", int.class), script);
         codeTester.runTest();
-        tarantula taran = new tarantula(5,2,3,5);
+        Tarantula taran = new Tarantula(5,2,3,5);
         System.out.println(taran.metricCalculator());
     }
 }
