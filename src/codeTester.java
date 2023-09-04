@@ -11,9 +11,9 @@ public class codeTester {
         this.instanceOfScript = instanceOfScript;
     }
 
-    public void runTest() {
+    public void runTest(int argToPass) {
         try {
-            methodToTest.invoke(instanceOfScript);
+            methodToTest.invoke(instanceOfScript,argToPass);
             System.out.println("Method executed successfully.");
         } catch (Exception e) {
             System.out.println("An error occurred during method execution: " + e.getMessage());

@@ -1,5 +1,7 @@
 package src;
 
+import java.util.List;
+
 /**
  * Responsible for calculating the tarantula metric.
  * A fault localization technique
@@ -19,11 +21,11 @@ public class Tarantula {
      * @param cExecutionPass    Number of passed test cases where the code was executed.
      * @param cNoExecutionPass  Number of passed test cases where the code was not executed.
      */
-    public Tarantula(int cExecutionFail, int cNoExecutionFail, int cExecutionPass, int cNoExecutionPass) {
-        this.cExecutionFail = cExecutionFail;
-        this.cNoExecutionFail = cNoExecutionFail;
-        this.cExecutionPass = cExecutionPass;
-        this.cNoExecutionPass = cNoExecutionPass;
+    public Tarantula(List<Double> numbersToUse) {
+        this.cExecutionFail = numbersToUse.get(0);
+        this.cNoExecutionFail = numbersToUse.get(1);
+        this.cExecutionPass = numbersToUse.get(2);
+        this.cNoExecutionPass = numbersToUse.get(3);
     }
 
     /**
