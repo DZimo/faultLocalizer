@@ -19,19 +19,20 @@ public class ErrorCalculator {
 
 
     // here we try to do tests and collect results to get number of errors
-    public void findTheError() throws Exception {
+    public void findTheError(int numberOfTests) throws Exception {
         // IF WE SEND numberToTest DIFFERENT THEN 0 OR 1 WE GET NULL EXCEPTION
-        int numberToTest = 5;
-        codeTester.runTest(numberToTest);
-        Tarantula taran = new Tarantula(calculateAllValues());
-        double totalOfStatements = countLinesInMethod("src/main.java", "main");
+        for (int i = 5; i < numberOfTests; i++){
+            codeTester.runTest(i);
+            Tarantula taran = new Tarantula(calculateAllValues());
+            double totalOfStatements = countLinesInMethod("src/main.java", "main");
+            cExecutionFail = codeTester.getExceptionCount();
+            cNoExecutionFail = codeTester.getExceptionCount();
+            cExecutionPass = codeTester.getExceptionCount();
+            cNoExecutionPass = codeTester.getExceptionCount();
 
-        cExecutionFail = codeTester.getExceptionCount();
-        cExecutionFail = codeTester.getExceptionCount();
-        cExecutionFail = codeTester.getExceptionCount();
-        cExecutionFail = codeTester.getExceptionCount();
+            System.out.println(taran.metricCalculator());
+        }
 
-        System.out.println(taran.metricCalculator());
     }
 
     public List<Double> calculateAllValues() {
