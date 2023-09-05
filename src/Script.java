@@ -4,20 +4,15 @@ public class Script {
 
     public int scriptExample(int numberToTest)
     {
-        packet packet = new packet(numberToTest);
+        Packet packet = new Packet(numberToTest);
         int data;
-        switch (packet.value)
-        {
-            case 0:
-                data = packet.value;
-                break;
-            case 1:
-                data = packet.value;
-                break;
-            default:
+        switch (packet.value) {
+            case 0 -> data = packet.value;
+            case 1 -> data = packet.value;
+            default -> {
                 data = packet.value;
                 packet = null;
-                break;
+            }
         }
         data = packet.value;
         return data;

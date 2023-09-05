@@ -14,12 +14,7 @@ public class Tarantula {
     private final double cNoExecutionPass;
 
     /**
-     *
-     *
-     * @param cExecutionFail    Number of failed test cases where the code was executed.
-     * @param cNoExecutionFail  Number of failed test cases where the code was not executed.
-     * @param cExecutionPass    Number of passed test cases where the code was executed.
-     * @param cNoExecutionPass  Number of passed test cases where the code was not executed.
+
      */
     public Tarantula(List<Double> numbersToUse) {
         this.cExecutionFail = numbersToUse.get(0);
