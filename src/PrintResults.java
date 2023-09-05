@@ -1,11 +1,11 @@
 package src;
 
-public class printResults {
+public class PrintResults {
     int totalOfLines;
     int lineNumber;
     int result;
 
-    public printResults(int totalOfLines, int lineNumber, int result) {
+    public PrintResults(int totalOfLines, int lineNumber, int result) {
         this.totalOfLines = totalOfLines;
         this.lineNumber = lineNumber;
         this.result = result;
@@ -20,4 +20,5 @@ public class printResults {
             lineNumber++;
         }
     }
+
 }

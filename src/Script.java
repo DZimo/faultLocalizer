@@ -15,6 +15,7 @@ public class Script {
             }
         }
         data = packet.value;
+
         return data;
     }
 
